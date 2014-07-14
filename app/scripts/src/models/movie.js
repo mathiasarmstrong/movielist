@@ -1,12 +1,15 @@
-var Movie = Backbone.Model.extend({
-  // uncheck: function() {
-  //   this.set({complete: false});
-  // },
+(function(){
+
+window.Movie = Backbone.Model.extend({
+
   defaults: {
     complete: false
   }
-});
-
-var Show = Backbone.Model.extend({
 
 });
+
+  // COLLECTION
+window.Movies = Backbone.Collection.extend({
+    model: Movie
+  });
+})();

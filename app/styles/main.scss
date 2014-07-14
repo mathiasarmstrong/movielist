@@ -93,4 +93,8 @@ body {
     #templates {
         display: none;
     }
+
+    #movie-list .movie.done label {
+    text-decoration: line-through;
+    }
 }
